@@ -5,7 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		mobilePhoneBook phone1 = new mobilePhoneBook();
 		
-		phone1.saveNames("Michael Donaldson");
+		phone1.saveNames();
+		
+		
 
 	}
 

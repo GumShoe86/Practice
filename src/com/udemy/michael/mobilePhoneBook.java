@@ -8,19 +8,25 @@ import java.util.Scanner;
 public class mobilePhoneBook {
 	private static Scanner scan = new Scanner(System.in);
 	
-	ArrayList<String> names = new ArrayList<String>();
+	private String name;
+	private String phoneNumber;
 	
-	ArrayList<Integer> phoneNumber =  new ArrayList<Integer>();
+	ArrayList<String> namesArray = new ArrayList<String>();
+	
+	ArrayList<Integer> phoneNumberArray =  new ArrayList<Integer>();
 	
 	
-	public static void saveNames(String Name) {
+	public static String saveNames() {
 		System.out.println("Please Enter First & Last Name to save \n");
-		
-		
-		if (!Name.isEmpty()) {
-			System.out.println("The name " + Name + "has been saved");
+		String name = "";
+		name = scan.nextLine();
+		if (!name.isEmpty()) {
+			System.out.println("The name " + name + " has been saved");
+			return name;
+		}else {
+		return "No name has been entered";
 		}
-		System.out.println("No name has been entered");
+		
 		
 	}
 	

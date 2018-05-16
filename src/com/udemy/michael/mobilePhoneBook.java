@@ -13,7 +13,7 @@ public class mobilePhoneBook {
 	ArrayList<Integer> phoneNumber =  new ArrayList<Integer>();
 	
 	
-	public static void saveNames() {
+	public static void saveNames(String Name) {
 		System.out.println("Please Enter First & Last Name to save \n");
 		
 		

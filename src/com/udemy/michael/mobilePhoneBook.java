@@ -13,9 +13,9 @@ public class mobilePhoneBook {
 	ArrayList<Integer> phoneNumber =  new ArrayList<Integer>();
 	
 	
-	public static void saveNames(String Name) {
+	public static void saveNames() {
 		System.out.println("Please Enter First & Last Name to save \n");
-		Name.equals(scan.nextLine());
+		
 		
 		if (!Name.isEmpty()) {
 			System.out.println("The name " + Name + "has been saved");
